@@ -6,7 +6,7 @@ public class NumberFormatException {
   // method to generate exception
   public static void generateException(String text) {
     int numberInText = Integer.parseInt(text);
-    System.out.print("Numbers in thext is " + numberInText);
+    System.out.print("Numbers in text is " + numberInText);
   }
 
   // method to handle exception

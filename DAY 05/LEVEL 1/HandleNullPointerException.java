@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class HandleNullPointerException {
 
-  // method for generate exceptio
+  // method for generate exception
   public static int stringLength(String str) {
     return str.length();
   }
