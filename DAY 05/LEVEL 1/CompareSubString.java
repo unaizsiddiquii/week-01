@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class CompareSubString {
+  // method to findSubString
   public static String findSubString(String string, int startIndex, int endIndex) {
 
     String subString = "";
@@ -11,6 +12,7 @@ public class CompareSubString {
     return subString;
   }
 
+  // method to find sub string with built in function
   public static String findSubStringBuiltin(String string, int startIndex, int endIndex) {
 
     String subString = string.substring(startIndex, endIndex);
@@ -22,14 +24,16 @@ public class CompareSubString {
 
     Scanner input = new Scanner(System.in);
 
+    // get user input
     System.out.print("Enter a String: ");
     String string = input.next();
 
+    // get start index and end index
     System.out.print("Enter start index : ");
     int startIndex = input.nextInt();
     System.out.print("Enter end index : ");
 
-    // id user enter end index for then a string lenght then string.length value is
+    // id user enter end index for then a string length then string.length value is
     // assign to end index
     int endIndex = input.nextInt();
     if (endIndex > string.length()) {
@@ -40,13 +44,14 @@ public class CompareSubString {
     String subString = findSubString(string, startIndex, endIndex);
     String subString2 = findSubStringBuiltin(string, startIndex, endIndex);
 
-    // compairing both method return type with equal method nad displaying the
+    // comparing both method return type with equal method nad displaying the
     // output
     if (subString.equals(subString2)) {
       System.out.println("Substring is equal and sub String is : " + subString);
     } else {
       System.out.println("Substring is not equal");
     }
+    input.close();
 
   }
 }
